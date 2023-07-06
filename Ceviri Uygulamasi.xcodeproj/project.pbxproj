@@ -17,6 +17,11 @@
 		46EDDAE12A529C5800F8257E /* Ceviri_UygulamasiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDDAE02A529C5800F8257E /* Ceviri_UygulamasiTests.swift */; };
 		46EDDAEB2A529C5800F8257E /* Ceviri_UygulamasiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDDAEA2A529C5800F8257E /* Ceviri_UygulamasiUITests.swift */; };
 		46EDDAED2A529C5800F8257E /* Ceviri_UygulamasiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDDAEC2A529C5800F8257E /* Ceviri_UygulamasiUITestsLaunchTests.swift */; };
+		46EDDAFA2A52B0B200F8257E /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDDAF92A52B0B200F8257E /* LanguageManager.swift */; };
+		46EDDAFC2A52BBF400F8257E /* Languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 46EDDAFB2A52BBF400F8257E /* Languages.json */; };
+		46EDDB002A54282800F8257E /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDDAFF2A54282800F8257E /* Translation.swift */; };
+		46EDDB022A546EF900F8257E /* client_106168427478-lkji93g5dguvggdb8j2uca1uqm4orrdc.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46EDDB012A546EF900F8257E /* client_106168427478-lkji93g5dguvggdb8j2uca1uqm4orrdc.apps.googleusercontent.com.plist */; };
+		46EDDB042A559E3B00F8257E /* Detect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDDB032A559E3B00F8257E /* Detect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		46EDDAE62A529C5800F8257E /* Ceviri UygulamasiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ceviri UygulamasiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EDDAEA2A529C5800F8257E /* Ceviri_UygulamasiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ceviri_UygulamasiUITests.swift; sourceTree = "<group>"; };
 		46EDDAEC2A529C5800F8257E /* Ceviri_UygulamasiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ceviri_UygulamasiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		46EDDAF92A52B0B200F8257E /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		46EDDAFB2A52BBF400F8257E /* Languages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Languages.json; sourceTree = "<group>"; };
+		46EDDAFF2A54282800F8257E /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		46EDDB012A546EF900F8257E /* client_106168427478-lkji93g5dguvggdb8j2uca1uqm4orrdc.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_106168427478-lkji93g5dguvggdb8j2uca1uqm4orrdc.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
+		46EDDB032A559E3B00F8257E /* Detect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +114,16 @@
 				46EDDAC62A529C5700F8257E /* AppDelegate.swift */,
 				46EDDAC82A529C5700F8257E /* SceneDelegate.swift */,
 				46EDDACA2A529C5700F8257E /* ViewController.swift */,
+				46EDDB032A559E3B00F8257E /* Detect.swift */,
 				46EDDACC2A529C5700F8257E /* Main.storyboard */,
 				46EDDAD22A529C5800F8257E /* Assets.xcassets */,
 				46EDDAD42A529C5800F8257E /* LaunchScreen.storyboard */,
 				46EDDAD72A529C5800F8257E /* Info.plist */,
+				46EDDB012A546EF900F8257E /* client_106168427478-lkji93g5dguvggdb8j2uca1uqm4orrdc.apps.googleusercontent.com.plist */,
 				46EDDACF2A529C5700F8257E /* Ceviri_Uygulamasi.xcdatamodeld */,
+				46EDDAFB2A52BBF400F8257E /* Languages.json */,
+				46EDDAF92A52B0B200F8257E /* LanguageManager.swift */,
+				46EDDAFF2A54282800F8257E /* Translation.swift */,
 			);
 			path = "Ceviri Uygulamasi";
 			sourceTree = "<group>";
@@ -234,7 +249,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46EDDB022A546EF900F8257E /* client_106168427478-lkji93g5dguvggdb8j2uca1uqm4orrdc.apps.googleusercontent.com.plist in Resources */,
 				46EDDAD62A529C5800F8257E /* LaunchScreen.storyboard in Resources */,
+				46EDDAFC2A52BBF400F8257E /* Languages.json in Resources */,
 				46EDDAD32A529C5800F8257E /* Assets.xcassets in Resources */,
 				46EDDACE2A529C5700F8257E /* Main.storyboard in Resources */,
 			);
@@ -264,7 +281,10 @@
 				46EDDAD12A529C5700F8257E /* Ceviri_Uygulamasi.xcdatamodeld in Sources */,
 				46EDDACB2A529C5700F8257E /* ViewController.swift in Sources */,
 				46EDDAC72A529C5700F8257E /* AppDelegate.swift in Sources */,
+				46EDDB042A559E3B00F8257E /* Detect.swift in Sources */,
 				46EDDAC92A529C5700F8257E /* SceneDelegate.swift in Sources */,
+				46EDDAFA2A52B0B200F8257E /* LanguageManager.swift in Sources */,
+				46EDDB002A54282800F8257E /* Translation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +469,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,6 +498,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
