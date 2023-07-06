@@ -19,9 +19,10 @@
 		46EDDAED2A529C5800F8257E /* Ceviri_UygulamasiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDDAEC2A529C5800F8257E /* Ceviri_UygulamasiUITestsLaunchTests.swift */; };
 		46EDDAFA2A52B0B200F8257E /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDDAF92A52B0B200F8257E /* LanguageManager.swift */; };
 		46EDDAFC2A52BBF400F8257E /* Languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 46EDDAFB2A52BBF400F8257E /* Languages.json */; };
-		46EDDB002A54282800F8257E /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDDAFF2A54282800F8257E /* Translation.swift */; };
 		46EDDB022A546EF900F8257E /* client_106168427478-lkji93g5dguvggdb8j2uca1uqm4orrdc.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46EDDB012A546EF900F8257E /* client_106168427478-lkji93g5dguvggdb8j2uca1uqm4orrdc.apps.googleusercontent.com.plist */; };
 		46EDDB042A559E3B00F8257E /* Detect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDDB032A559E3B00F8257E /* Detect.swift */; };
+		46EDDB0A2A56AE4700F8257E /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDDB092A56AE4700F8257E /* TranslationService.swift */; };
+		46FD762C2A56AFE400B508AB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD762B2A56AFE400B508AB /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +59,10 @@
 		46EDDAEC2A529C5800F8257E /* Ceviri_UygulamasiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ceviri_UygulamasiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		46EDDAF92A52B0B200F8257E /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		46EDDAFB2A52BBF400F8257E /* Languages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Languages.json; sourceTree = "<group>"; };
-		46EDDAFF2A54282800F8257E /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		46EDDB012A546EF900F8257E /* client_106168427478-lkji93g5dguvggdb8j2uca1uqm4orrdc.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_106168427478-lkji93g5dguvggdb8j2uca1uqm4orrdc.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
 		46EDDB032A559E3B00F8257E /* Detect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detect.swift; sourceTree = "<group>"; };
+		46EDDB092A56AE4700F8257E /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
+		46FD762B2A56AFE400B508AB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,19 +113,13 @@
 		46EDDAC52A529C5700F8257E /* Ceviri Uygulamasi */ = {
 			isa = PBXGroup;
 			children = (
-				46EDDAC62A529C5700F8257E /* AppDelegate.swift */,
-				46EDDAC82A529C5700F8257E /* SceneDelegate.swift */,
-				46EDDACA2A529C5700F8257E /* ViewController.swift */,
-				46EDDB032A559E3B00F8257E /* Detect.swift */,
-				46EDDACC2A529C5700F8257E /* Main.storyboard */,
-				46EDDAD22A529C5800F8257E /* Assets.xcassets */,
-				46EDDAD42A529C5800F8257E /* LaunchScreen.storyboard */,
+				46FD766C2A56BE8500B508AB /* Resources */,
+				46FD766B2A56BE6E00B508AB /* Controller */,
+				46FD766A2A56BE5500B508AB /* View */,
+				46FD76692A56BE3100B508AB /* Model */,
 				46EDDAD72A529C5800F8257E /* Info.plist */,
 				46EDDB012A546EF900F8257E /* client_106168427478-lkji93g5dguvggdb8j2uca1uqm4orrdc.apps.googleusercontent.com.plist */,
 				46EDDACF2A529C5700F8257E /* Ceviri_Uygulamasi.xcdatamodeld */,
-				46EDDAFB2A52BBF400F8257E /* Languages.json */,
-				46EDDAF92A52B0B200F8257E /* LanguageManager.swift */,
-				46EDDAFF2A54282800F8257E /* Translation.swift */,
 			);
 			path = "Ceviri Uygulamasi";
 			sourceTree = "<group>";
@@ -143,6 +139,45 @@
 				46EDDAEC2A529C5800F8257E /* Ceviri_UygulamasiUITestsLaunchTests.swift */,
 			);
 			path = "Ceviri UygulamasiUITests";
+			sourceTree = "<group>";
+		};
+		46FD76692A56BE3100B508AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46FD762B2A56AFE400B508AB /* Extensions.swift */,
+				46EDDB032A559E3B00F8257E /* Detect.swift */,
+				46EDDAF92A52B0B200F8257E /* LanguageManager.swift */,
+				46EDDB092A56AE4700F8257E /* TranslationService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		46FD766A2A56BE5500B508AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46EDDACC2A529C5700F8257E /* Main.storyboard */,
+				46EDDAD42A529C5800F8257E /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46FD766B2A56BE6E00B508AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				46EDDACA2A529C5700F8257E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		46FD766C2A56BE8500B508AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46EDDAC62A529C5700F8257E /* AppDelegate.swift */,
+				46EDDAFB2A52BBF400F8257E /* Languages.json */,
+				46EDDAC82A529C5700F8257E /* SceneDelegate.swift */,
+				46EDDAD22A529C5800F8257E /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,12 +314,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				46EDDAD12A529C5700F8257E /* Ceviri_Uygulamasi.xcdatamodeld in Sources */,
+				46FD762C2A56AFE400B508AB /* Extensions.swift in Sources */,
 				46EDDACB2A529C5700F8257E /* ViewController.swift in Sources */,
 				46EDDAC72A529C5700F8257E /* AppDelegate.swift in Sources */,
+				46EDDB0A2A56AE4700F8257E /* TranslationService.swift in Sources */,
 				46EDDB042A559E3B00F8257E /* Detect.swift in Sources */,
 				46EDDAC92A529C5700F8257E /* SceneDelegate.swift in Sources */,
 				46EDDAFA2A52B0B200F8257E /* LanguageManager.swift in Sources */,
-				46EDDB002A54282800F8257E /* Translation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,8 +503,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -496,8 +531,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
