@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -14,28 +14,28 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ceviri_Uygulamasi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Target Language" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E3M-cj-6iE">
-                                <rect key="frame" x="257" y="469" width="136" height="34"/>
+                                <rect key="frame" x="221" y="395" width="137" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="G6C-fg-ef7">
-                                <rect key="frame" x="33" y="80" width="362" height="346"/>
+                                <rect key="frame" x="33" y="92" width="327" height="260"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Language" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FIy-ZB-9tQ">
-                                <rect key="frame" x="33.000000000000007" y="469" width="124.66666666666669" height="34"/>
+                                <rect key="frame" x="33" y="395" width="125" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oOL-ra-BQ7">
-                                <rect key="frame" x="34" y="582" width="360" height="238"/>
+                                <rect key="frame" x="34" y="508" width="325" height="238"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="238" id="5Cr-sA-39g"/>
@@ -45,7 +45,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZa-8n-ugJ">
-                                <rect key="frame" x="186" y="469" width="56" height="34"/>
+                                <rect key="frame" x="168.66666666666666" y="454" width="56" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.2.squarepath" catalog="system"/>
                                 <connections>
@@ -56,20 +56,20 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="G6C-fg-ef7" firstAttribute="centerX" secondItem="ZZa-8n-ugJ" secondAttribute="centerX" id="4sr-ze-TkC"/>
+                            <constraint firstItem="ZZa-8n-ugJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Qf-Oa-jCr"/>
                             <constraint firstItem="G6C-fg-ef7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="5PX-ZD-Goo"/>
+                            <constraint firstItem="oOL-ra-BQ7" firstAttribute="top" secondItem="E3M-cj-6iE" secondAttribute="bottom" constant="79" id="6u7-Rh-DaJ"/>
                             <constraint firstItem="E3M-cj-6iE" firstAttribute="centerY" secondItem="FIy-ZB-9tQ" secondAttribute="centerY" id="CnJ-3Z-KOS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E3M-cj-6iE" secondAttribute="trailing" constant="35" id="EsJ-IR-Rzz"/>
+                            <constraint firstItem="E3M-cj-6iE" firstAttribute="top" secondItem="G6C-fg-ef7" secondAttribute="bottom" constant="43" id="IWD-4Q-dSF"/>
+                            <constraint firstItem="oOL-ra-BQ7" firstAttribute="top" secondItem="ZZa-8n-ugJ" secondAttribute="bottom" constant="20" id="Ibn-fj-xtc"/>
                             <constraint firstItem="G6C-fg-ef7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="PRE-Lm-2ZV"/>
-                            <constraint firstItem="ZZa-8n-ugJ" firstAttribute="centerY" secondItem="FIy-ZB-9tQ" secondAttribute="centerY" id="T9c-Ab-ckP"/>
                             <constraint firstItem="oOL-ra-BQ7" firstAttribute="top" secondItem="FIy-ZB-9tQ" secondAttribute="bottom" constant="79" id="VME-BR-heb"/>
                             <constraint firstItem="G6C-fg-ef7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="WoH-fB-ioN"/>
                             <constraint firstItem="FIy-ZB-9tQ" firstAttribute="top" secondItem="G6C-fg-ef7" secondAttribute="bottom" constant="43" id="b01-Dt-lWc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G6C-fg-ef7" secondAttribute="trailing" constant="33" id="emR-jh-uSX"/>
                             <constraint firstItem="oOL-ra-BQ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="lti-DA-cIV"/>
                             <constraint firstItem="FIy-ZB-9tQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="nHr-wn-D5i"/>
-                            <constraint firstItem="E3M-cj-6iE" firstAttribute="leading" secondItem="ZZa-8n-ugJ" secondAttribute="trailing" constant="15" id="qqd-G0-uh8"/>
-                            <constraint firstItem="ZZa-8n-ugJ" firstAttribute="centerX" secondItem="oOL-ra-BQ7" secondAttribute="centerX" id="sBm-bU-NVM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oOL-ra-BQ7" secondAttribute="trailing" constant="34" id="sXs-Py-Uwg"/>
                             <constraint firstItem="G6C-fg-ef7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="tos-ge-vxJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oOL-ra-BQ7" secondAttribute="bottom" constant="72" id="vvb-Up-6eq"/>
