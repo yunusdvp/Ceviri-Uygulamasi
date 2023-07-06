@@ -115,6 +115,9 @@ class ViewController: UIViewController {
              
          
         }
+       // Çeviri işlemini başlatan fonksiyon
+      
+
 
        @objc func okClicked(){
            view.endEditing(true)
