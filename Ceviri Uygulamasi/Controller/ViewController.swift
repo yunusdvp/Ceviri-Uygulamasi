@@ -52,11 +52,13 @@ class ViewController: UIViewController {
     @IBAction func translateButtonTapped(_ sender: Any) {
         guard let currentLanguageCode = languages.first(where: { $0.name == yourLanguage.text })?.code else {
             print("Invalid current language")
+            showAlert(message: "Invalid current language")
             return
         }
         
         guard let targetLanguageCode = languages.first(where: { $0.name == targetLanguage.text })?.code else {
             print("Invalid target language")
+            showAlert(message: "Invalid target language")
             return
         }
         
@@ -138,4 +140,9 @@ class ViewController: UIViewController {
                
                pickerView?.resignFirstResponder()
            }
+       func showAlert(message: String) {
+           let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+           alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+           present(alert, animated: true, completion: nil)
+       }
     }
